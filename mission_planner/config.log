@@ -1,0 +1,10 @@
+executing config test has_flite
++ cd /home/sdr/my_proj/apm_planner/config.tests/has_flite && /usr/lib/x86_64-linux-gnu/qt5/bin/qmake -spec /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 "CONFIG -= qt debug_and_release app_bundle lib_bundle" /home/sdr/my_proj/apm_planner/config.tests/has_flite
++ cd /home/sdr/my_proj/apm_planner/config.tests/has_flite && make
+g++ -c -m64 -pipe -O2 -Wall -W -fPIC  -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -o main.o main.cpp
+main.cpp: In function ‘int main()’:
+main.cpp:8:18: warning: statement has no effect [-Wunused-value]
+  flite_voice_list;
+                  ^
+g++ -m64 -Wl,-O1 -o has_flite main.o   -lflite 
+test has_flite succeeded

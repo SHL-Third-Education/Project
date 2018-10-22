@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_My_Gpio_Core_0_0_synth_1" LaunchDir="/home/siyun/vivado_workspace/all_test_2/hardware/all_test_2.runs/design_1_My_Gpio_Core_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

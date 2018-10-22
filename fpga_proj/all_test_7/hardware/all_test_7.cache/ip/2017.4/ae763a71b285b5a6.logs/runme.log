@@ -1,0 +1,388 @@
+
+*** Running vivado
+    with args -log design_1_My_ALLSTEP_Core_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_My_ALLSTEP_Core_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_My_ALLSTEP_Core_0_0.tcl -notrace
+Command: synth_design -top design_1_My_ALLSTEP_Core_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7035 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1274.027 ; gain = 86.996 ; free physical = 719 ; free virtual = 4757
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_My_ALLSTEP_Core_0_0' [/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.srcs/sources_1/bd/design_1/ip/design_1_My_ALLSTEP_Core_0_0_5/synth/design_1_My_ALLSTEP_Core_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'My_ALLSTEP_Core_v1_0' [/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.srcs/sources_1/bd/design_1/ipshared/c4ed/hdl/My_ALLSTEP_Core_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'My_ALLSTEP_Core_v1_0_S00_AXI' [/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.srcs/sources_1/bd/design_1/ipshared/c4ed/hdl/My_ALLSTEP_Core_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.srcs/sources_1/bd/design_1/ipshared/c4ed/hdl/My_ALLSTEP_Core_v1_0_S00_AXI.v:250]
+INFO: [Synth 8-226] default block is never used [/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.srcs/sources_1/bd/design_1/ipshared/c4ed/hdl/My_ALLSTEP_Core_v1_0_S00_AXI.v:423]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.srcs/sources_1/bd/design_1/ipshared/c4ed/hdl/My_ALLSTEP_Core_v1_0_S00_AXI.v:238]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.srcs/sources_1/bd/design_1/ipshared/c4ed/hdl/My_ALLSTEP_Core_v1_0_S00_AXI.v:240]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.srcs/sources_1/bd/design_1/ipshared/c4ed/hdl/My_ALLSTEP_Core_v1_0_S00_AXI.v:241]
+INFO: [Synth 8-256] done synthesizing module 'My_ALLSTEP_Core_v1_0_S00_AXI' (1#1) [/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.srcs/sources_1/bd/design_1/ipshared/c4ed/hdl/My_ALLSTEP_Core_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'My_ALLSTEP_Core_v1_0' (2#1) [/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.srcs/sources_1/bd/design_1/ipshared/c4ed/hdl/My_ALLSTEP_Core_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'design_1_My_ALLSTEP_Core_0_0' (3#1) [/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.srcs/sources_1/bd/design_1/ip/design_1_My_ALLSTEP_Core_0_0_5/synth/design_1_My_ALLSTEP_Core_0_0.v:56]
+WARNING: [Synth 8-3331] design My_ALLSTEP_Core_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design My_ALLSTEP_Core_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design My_ALLSTEP_Core_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design My_ALLSTEP_Core_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design My_ALLSTEP_Core_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design My_ALLSTEP_Core_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1315.559 ; gain = 128.527 ; free physical = 732 ; free virtual = 4771
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1315.559 ; gain = 128.527 ; free physical = 732 ; free virtual = 4771
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1629.168 ; gain = 0.000 ; free physical = 478 ; free virtual = 4517
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 1629.168 ; gain = 442.137 ; free physical = 557 ; free virtual = 4596
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 1629.168 ; gain = 442.137 ; free physical = 557 ; free virtual = 4596
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 1629.168 ; gain = 442.137 ; free physical = 559 ; free virtual = 4598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "period" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "period" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "duty" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.srcs/sources_1/bd/design_1/ipshared/c4ed/hdl/My_ALLSTEP_Core_v1_0_S00_AXI.v:463]
+WARNING: [Synth 8-6014] Unused sequential element pwm_counter_reg was removed.  [/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.srcs/sources_1/bd/design_1/ipshared/c4ed/hdl/My_ALLSTEP_Core_v1_0_S00_AXI.v:480]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 1629.168 ; gain = 442.137 ; free physical = 551 ; free virtual = 4590
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 8     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   8 Input     32 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module My_ALLSTEP_Core_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 8     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   8 Input     32 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/counter_reg was removed.  [/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.srcs/sources_1/bd/design_1/ipshared/c4ed/hdl/My_ALLSTEP_Core_v1_0_S00_AXI.v:463]
+WARNING: [Synth 8-6014] Unused sequential element inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/pwm_counter_reg was removed.  [/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.srcs/sources_1/bd/design_1/ipshared/c4ed/hdl/My_ALLSTEP_Core_v1_0_S00_AXI.v:480]
+WARNING: [Synth 8-3331] design design_1_My_ALLSTEP_Core_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design design_1_My_ALLSTEP_Core_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design design_1_My_ALLSTEP_Core_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design design_1_My_ALLSTEP_Core_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design design_1_My_ALLSTEP_Core_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design design_1_My_ALLSTEP_Core_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[1]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[2]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[3]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[4]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[5]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[6]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[7]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[8]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[9]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[10]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[11]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[12]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[13]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[14]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[16]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[17]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[18]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[19]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[20]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[21]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[22]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[23]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[24]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[25]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[26]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[27]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[28]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[29]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[30]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[0]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[1]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[2]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[3]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[4]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[5]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[6]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[7]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[8]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[9]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[10]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[11]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[12]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[13]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[15]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[16]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[17]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[18]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[19]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[20]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[21]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[22]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[23]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[24]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[25]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[26]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[27]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[28]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[29]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[30]' (FDRE) to 'inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[31] )
+INFO: [Synth 8-3332] Sequential element (inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module design_1_My_ALLSTEP_Core_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module design_1_My_ALLSTEP_Core_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/period_reg[31]) is unused and will be removed from module design_1_My_ALLSTEP_Core_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/duty_reg[31]) is unused and will be removed from module design_1_My_ALLSTEP_Core_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module design_1_My_ALLSTEP_Core_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module design_1_My_ALLSTEP_Core_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module design_1_My_ALLSTEP_Core_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/My_ALLSTEP_Core_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module design_1_My_ALLSTEP_Core_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:34 . Memory (MB): peak = 1629.168 ; gain = 442.137 ; free physical = 539 ; free virtual = 4578
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 1629.168 ; gain = 442.137 ; free physical = 411 ; free virtual = 4450
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 1629.168 ; gain = 442.137 ; free physical = 411 ; free virtual = 4450
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 1637.176 ; gain = 450.145 ; free physical = 409 ; free virtual = 4448
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.176 ; gain = 450.145 ; free physical = 409 ; free virtual = 4448
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.176 ; gain = 450.145 ; free physical = 409 ; free virtual = 4448
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.176 ; gain = 450.145 ; free physical = 409 ; free virtual = 4448
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.176 ; gain = 450.145 ; free physical = 409 ; free virtual = 4448
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.176 ; gain = 450.145 ; free physical = 409 ; free virtual = 4448
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.176 ; gain = 450.145 ; free physical = 409 ; free virtual = 4448
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    30|
+|2     |LUT1   |     9|
+|3     |LUT2   |    24|
+|4     |LUT3   |    35|
+|5     |LUT4   |    41|
+|6     |LUT5   |    47|
+|7     |LUT6   |    51|
+|8     |MUXF7  |     4|
+|9     |FDRE   |   272|
+|10    |FDSE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------------------+-----------------------------+------+
+|      |Instance                              |Module                       |Cells |
++------+--------------------------------------+-----------------------------+------+
+|1     |top                                   |                             |   514|
+|2     |  inst                                |My_ALLSTEP_Core_v1_0         |   514|
+|3     |    My_ALLSTEP_Core_v1_0_S00_AXI_inst |My_ALLSTEP_Core_v1_0_S00_AXI |   514|
++------+--------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.176 ; gain = 450.145 ; free physical = 409 ; free virtual = 4448
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1637.176 ; gain = 136.535 ; free physical = 463 ; free virtual = 4502
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 1637.184 ; gain = 450.145 ; free physical = 469 ; free virtual = 4508
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+98 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 1637.184 ; gain = 474.980 ; free physical = 454 ; free virtual = 4493
+INFO: [Common 17-1381] The checkpoint '/home/siyun/vivado_workspace/all_test_7/hardware/all_test_7.runs/design_1_My_ALLSTEP_Core_0_0_synth_1/design_1_My_ALLSTEP_Core_0_0.dcp' has been generated.

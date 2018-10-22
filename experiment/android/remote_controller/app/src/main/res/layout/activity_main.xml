@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/ip_viewer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="16dp"
+        android:text="IP Address"
+        app:layout_constraintBottom_toTopOf="@+id/port_viewer"
+        app:layout_constraintEnd_toStartOf="@+id/input_port"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msg_viewer" />
+
+    <TextView
+        android:id="@+id/port_viewer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginStart="16dp"
+        android:text="PORT"
+        app:layout_constraintBottom_toTopOf="@+id/connect_button"
+        app:layout_constraintEnd_toStartOf="@+id/input_msg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ip_viewer" />
+
+    <TextView
+        android:id="@+id/msg_viewer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="110dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="16dp"
+        android:text="message "
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/input_ip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="63dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="192.168.43.1"
+        app:layout_constraintBottom_toTopOf="@+id/input_port"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/msg_viewer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_port"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="63dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="7777"
+        app:layout_constraintBottom_toTopOf="@+id/input_msg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ip_viewer"
+        app:layout_constraintTop_toBottomOf="@+id/input_ip" />
+
+    <EditText
+        android:id="@+id/input_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="63dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="13 1530"
+        app:layout_constraintBottom_toTopOf="@+id/disconnect_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/port_viewer"
+        app:layout_constraintTop_toBottomOf="@+id/input_port" />
+
+    <Button
+        android:id="@+id/connect_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
+        android:text="연결"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/disconnect_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/port_viewer" />
+
+    <Button
+        android:id="@+id/disconnect_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="해제"
+        app:layout_constraintBottom_toTopOf="@+id/recv_msg"
+        app:layout_constraintEnd_toStartOf="@+id/send_button"
+        app:layout_constraintStart_toEndOf="@+id/connect_button"
+        app:layout_constraintTop_toBottomOf="@+id/input_msg" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="127dp"
+        android:text="전송"
+        app:layout_constraintBottom_toBottomOf="@+id/disconnect_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/disconnect_button"
+        app:layout_constraintTop_toTopOf="@+id/disconnect_button" />
+
+    <EditText
+        android:id="@+id/recv_msg"
+        android:layout_width="93dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="207dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/disconnect_button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="41dp"
+        android:layout_marginEnd="16dp"
+        android:text="UP"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/view_veloc"
+        app:layout_constraintTop_toBottomOf="@+id/recv_msg" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="95dp"
+        android:text="DOWN"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="85dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="16dp"
+        android:text="STOP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ang_seek"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginStart="16dp"
+        android:text="모터"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/view_veloc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/break_light" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:text="조향"
+        app:layout_constraintBottom_toTopOf="@+id/ang_seek"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/view_veloc"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="11dp"
+        android:text="1500"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/break_light"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <SeekBar
+        android:id="@+id/ang_seek"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="32dp"
+        android:max="20"
+        android:progress="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginTop="20dp"
+        android:text="1500"
+        app:layout_constraintBottom_toTopOf="@+id/ang_seek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="123dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="340dp"
+        android:layout_marginStart="16dp"
+        android:text="msg from DSP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msg_viewer" />
+
+    <Switch
+        android:id="@+id/blink_left"
+        android:layout_width="127dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="16dp"
+        android:text="방향지시등(좌)"
+        app:layout_constraintBottom_toTopOf="@+id/blink_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Switch
+        android:id="@+id/blink_right"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="16dp"
+        android:text="방향지시등(우)"
+        app:layout_constraintBottom_toTopOf="@+id/break_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blink_left" />
+
+    <Switch
+        android:id="@+id/front_light"
+        android:layout_width="127dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:text="전조등"
+        app:layout_constraintBottom_toTopOf="@+id/view_veloc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blink_left" />
+
+    <Switch
+        android:id="@+id/break_light"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="34dp"
+        android:text="브레이크등"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/front_light"
+        app:layout_constraintStart_toStartOf="@+id/front_light"
+        app:layout_constraintTop_toBottomOf="@+id/blink_right" />
+
+
+</android.support.constraint.ConstraintLayout>
