@@ -25,9 +25,9 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 
 |Subject|Title|Link|
 |-|-|-|
-|Power Electronics|LC Resonance|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/dcdc/LC%20Resonance.pdf)|
-|Power Electronics|SMPS Power Electronics 1|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/dcdc/SMPS_PowerElectronics_1.pdf)|
-|Power Electronics|SMPS Power Electronics 5|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/dcdc/SMPS_PowerElectronics_5.pdf)|
+|Power Electronics|LC Resonance|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/circuit/book_study/LC%20Resonance.pdf)|
+|Power Electronics|SMPS Power Electronics 1|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/circuit/book_study/SMPS_PowerElectronics_1.pdf)|
+|Power Electronics|SMPS Power Electronics 5|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/circuit/book_study/SMPS_PowerElectronics_5.pdf)|
 |Week Mission|1st Week Mission|[pdf](https://github.com/KOITT2/RC_Car/blob/master/cur_present/%EC%B4%9D%EA%B4%84%EC%84%A4%EA%B3%84%EC%A0%90%EA%B2%80/Project_1.pdf)|
 |Week Mission|2nd Week Mission|[pdf](https://github.com/KOITT2/RC_Car/blob/master/cur_present/%EC%B4%9D%EA%B4%84%EC%84%A4%EA%B3%84%EC%A0%90%EA%B2%80/Project_2.pdf)|
 |Week Mission|3rd Week Mission|[pdf](https://github.com/KOITT2/RC_Car/blob/master/cur_present/%EC%B4%9D%EA%B4%84%EC%84%A4%EA%B3%84%EC%A0%90%EA%B2%80/Project_3.pdf)|
@@ -40,26 +40,26 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |Week Mission|10th Week Mission|[pdf](https://github.com/KOITT2/RC_Car/blob/master/cur_present/%EC%B4%9D%EA%B4%84%EC%84%A4%EA%B3%84%EC%A0%90%EA%B2%80/Project_10.pdf)|
 |Week Mission|11th Week Mission|[pdf](https://github.com/KOITT2/RC_Car/blob/master/cur_present/%EC%B4%9D%EA%B4%84%EC%84%A4%EA%B3%84%EC%A0%90%EA%B2%80/Project_11.pdf)|
 |Week Mission|12th Week Mission|[pdf](https://github.com/KOITT2/RC_Car/blob/master/cur_present/%EC%B4%9D%EA%B4%84%EC%84%A4%EA%B3%84%EC%A0%90%EA%B2%80/Project_12.pdf)|
-|Design|Full Architecture|[pdf](https://github.com/KOITT2/RC_Car/blob/master/doc/design/Full_Architecture.pdf)|
-|Design|Lidar Signal Processing Design|[pdf](https://github.com/KOITT2/RC_Car/blob/master/doc/design/Lidar_Signal_Processing_Design.pdf)|
-|DSP|AM5728 FTDI USB 2 CAN|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/AM5728_FTDI_USB_2_CAN.pdf)|
-|DSP|AM5728 Wi-Fi Lab|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/AM5728_WiFi_Lab.pdf)|
-|DSP|AM5728 DSP Central Server Test|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/AM5728_DSP_Server.pdf)|
-|DSP|AM5728 Custom Kernel Compilation(Old Version)|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/AM5728_Kernel_Compile.pdf)|
-|DSP|AM5728 Wi-Fi Config Automation|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/AM5728_DSP_WiFi_Automatic.pdf)|
-|Battery|Battery(16000mAh) TATTU Translation to Korean|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/Battery(16000mAh)_TATTU.txt)|
-|Battery|Battery Charger|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/Battery_Charger.pdf)|
-|MCU|Cortex-R5F Can Test|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/CAN_Test.pdf)|
-|MCU|Configuring CAN TMS570 Translation(Korean)|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/Configuring%20CAN%20TMS570.txt)|
-|MCU|Cortex-R5F I2C Howto|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/Cortex_R5_I2C_Howto.pdf)|
-|MCU|Cortex-R5F I2C MPU6050 Control|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/I2C_MPU6050_Control.pdf)|
-|MCU|Cortex-R5F HET PWM|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/HET_PWM.pdf)|
-|MCU|I2C Communication Basic|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/I2C_Comm.pdf)|
-|MCU|Cortex-R5F RTI GPIO OC Circuit Configuration|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/RTI_GPIO_OC_Config.pdf)|
-|FPGA|Pmod CAN Control with Zynq Zybo|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/Pmod_CAN_Control_with_Zybo.pdf)|
-|Design|SPI Communication Basic|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/SPI_Comm.pdf)|
-|MCU|Cortex-R5F SPI Loopback|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/SPI_Loopback.pdf)|
-|Design|Understanding Encoder|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/Understanding_Encoder.pdf)|
+|Design|Full Architecture|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/design/Full_Architecture.pdf)|
+|Design|Lidar Signal Processing Design|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/design/Lidar_Signal_Processing_Design.pdf)|
+|DSP|AM5728 FTDI USB 2 CAN|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/AM5728_FTDI_USB_2_CAN.pdf)|
+|DSP|AM5728 Wi-Fi Lab|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/AM5728_WiFi_Lab.pdf)|
+|DSP|AM5728 DSP Central Server Test|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/AM5728_DSP_Server.pdf)|
+|DSP|AM5728 Custom Kernel Compilation(Old Version)|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/AM5728_Kernel_Compile.pdf)|
+|DSP|AM5728 Wi-Fi Config Automation|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/AM5728_DSP_WiFi_Automatic.pdf)|
+|Battery|Battery(16000mAh) TATTU Translation to Korean|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/Battery(16000mAh)_TATTU.txt)|
+|Battery|Battery Charger|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/Battery_Charger.pdf)|
+|MCU|Cortex-R5F Can Test|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/CAN_Test.pdf)|
+|MCU|Configuring CAN TMS570 Translation(Korean)|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/Configuring%20CAN%20TMS570.txt)|
+|MCU|Cortex-R5F I2C Howto|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/Cortex_R5_I2C_Howto.pdf)|
+|MCU|Cortex-R5F I2C MPU6050 Control|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/I2C_MPU6050_Control.pdf)|
+|MCU|Cortex-R5F HET PWM|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/HET_PWM.pdf)|
+|MCU|I2C Communication Basic|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/I2C_Comm.pdf)|
+|MCU|Cortex-R5F RTI GPIO OC Circuit Configuration|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/RTI_GPIO_OC_Config.pdf)|
+|FPGA|Pmod CAN Control with Zynq Zybo|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/Zybo/Pmod_CAN_Control_with_Zybo.pdf)|
+|MCU|SPI Communication Basic|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/SPI_Comm.pdf)|
+|MCU|Cortex-R5F SPI Loopback|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/SPI_Loopback.pdf)|
+|MCU|Understanding Encoder|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/Understanding_Encoder.pdf)|
 |MCU|Cortex-R5F Based BLDC Motor Manual Calibration I|[pdf](https://github.com/KOITT2/RC_Car/blob/master/doc/motor_control/ESCCalibration.pdf)|
 |MCU|Cortex-R5F Based BLDC Motor Manual Calibration II|[pdf](https://github.com/KOITT2/RC_Car/blob/master/doc/motor_control/MCU%EC%97%90%EC%84%9C%20%EB%AA%A8%ED%84%B0%20Calibration%20%EC%84%A4%EC%A0%95.pdf)|
 |Design|Mastering Kalman Filter|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/Upgrade_Kalman.pdf)|
