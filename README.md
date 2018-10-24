@@ -94,17 +94,17 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |DSP|TIDL API User Guide Translation|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/deep_learn/TIDL_API_User_Guide_Translation.pdf)|
 |DSP & FPGA|DSP & FPGA Socket Environment Setting|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/DSPnFPGA_Socket_Communication.pdf)|
 |Design|Server Design Documentation|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/design/Server_Design.pdf)|
-|PCB|Interlocked with OrCAD & Altium Designer|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/dcdc/Interlocked_with_OrCAD_n_Altium_Designer.pdf)|
-|PCB|Altium Designer Basics I|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/dcdc/Altium_Basics_I.pdf)|
-|PCB|Altium Designer Basics II|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/dcdc/Altium_Basics_II.pdf)|
-|FPGA|How to commit FPGA PetaLinux|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/How_to_commit_FPGA_Petalinux_Project.pdf)|
-|PCB|High Voltage Gate Driver PCB I|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/dcdc/High_Voltage_Board_PCB.pdf)|
-|DSP|VCP Based Can Server|[link](https://github.com/KOITT2/RC_Car/blob/master/dsp_proj/vcp_can_serv.c)|
-|DSP|Fifo Based Can Server|[link](https://github.com/KOITT2/RC_Car/blob/master/dsp_proj/fifo_can_serv.c)|
-|DSP|Fifo Based Can Server with FPGA Lan Server|[link](https://github.com/KOITT2/RC_Car/blob/master/dsp_proj/fifo_can_serv_final.c)|
-|DSP|AM5728 ALSA Sound Driver Configuration|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/AM5728_ALSA_Driver_Setting.pdf)|
-|DSP|Sound Engineering|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/AM5728_Sound_Engineering_1.pdf)|
-|DSP|Audio Signal Processing 1|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/Audio_Signal_Processing_1.pdf)|
+|PCB|Interlocked with OrCAD & Altium Designer|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/pcb/Interlocked_with_OrCAD_n_Altium_Designer.pdf)|
+|PCB|Altium Designer Basics I|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/pcb/Altium_Basics_I.pdf)|
+|PCB|Altium Designer Basics II|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/pcb/Altium_Basics_II.pdf)|
+|FPGA|How to commit FPGA PetaLinux|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/Zybo/How_to_commit_FPGA_Petalinux_Project.pdf)|
+|PCB|High Voltage Gate Driver PCB I|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/pcb/High_Voltage_Board_PCB.pdf)|
+|DSP|VCP Based Can Server|[link](https://github.com/SHL-Third-Education/Project/blob/master/dsp_proj/vcp_can_serv.c)|
+|DSP|Fifo Based Can Server|[link](https://github.com/SHL-Third-Education/Project/blob/master/dsp_proj/fifo_can_serv.c)|
+|DSP|Fifo Based Can Server with FPGA Lan Server|[link](https://github.com/SHL-Third-Education/Project/blob/master/dsp_proj/fifo_can_serv_final.c)|
+|DSP|AM5728 ALSA Sound Driver Configuration|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/AM5728_ALSA_Driver_Setting.pdf)|
+|DSP|Sound Engineering|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/AM5728_Sound_Engineering_1.pdf)|
+|DSP|Audio Signal Processing 1|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/Audio_Signal_Processing_1.pdf)|
 
 
 
