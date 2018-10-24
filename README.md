@@ -105,6 +105,7 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |DSP|AM5728 ALSA Sound Driver Configuration|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/AM5728_ALSA_Driver_Setting.pdf)|
 |DSP|Sound Engineering|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/AM5728_Sound_Engineering_1.pdf)|
 |DSP|Audio Signal Processing 1|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/Audio_Signal_Processing_1.pdf)|
+|FPGA|Vivado HLS Tutorial 1|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/HLS/Creating_Vivado_HLS_Project.pdf)|
 
 
 
