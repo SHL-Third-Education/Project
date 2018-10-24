@@ -88,7 +88,7 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |DSP|DSP Wi-Fi Secure AP Configuration Script|[link](https://github.com/SHL-Third-Education/Project/tree/master/dsp_proj/wl18xx_config)|
 |DSP|How to make Secure Wi-Fi AP on AM5728|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/How_to_make_Secure_AP.pdf)|
 |DSP|AM5728 Remote System Explorer Configuration|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/AM5728_RSE_Configuration.pdf)|
-|DSP|Wi-Fi Matrix App Config Script|[link](hhttps://github.com/SHL-Third-Education/Project/tree/master/dsp_proj/project_submenu), [link](https://github.com/SHL-Third-Education/Project/tree/master/dsp_proj/project_wifi)|
+|DSP|Wi-Fi Matrix App Config Script|[link](https://github.com/SHL-Third-Education/Project/tree/master/dsp_proj/project_submenu), [link](https://github.com/SHL-Third-Education/Project/tree/master/dsp_proj/project_wifi)|
 |DSP|How to make AM5728 Matrix App(Wi-Fi)|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/How_to_make_AM5728_Matrix_App(Wi-Fi).pdf)|
 |DSP|TIDL Basics Translation|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/deep_learn/TIDL_Translation.pdf)|
 |DSP|TIDL API User Guide Translation|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/deep_learn/TIDL_API_User_Guide_Translation.pdf)|
@@ -117,32 +117,32 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 
 |Subject|Title|Link|
 |-|-|-|
-|Power Electronics|Introduction Buck Converter|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/dcdc/BUCK%20CONVERTER%20.pdf)|
-|Power Electronics|PSIM PID Control|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/dcdc/PSIM%20PID%EC%A0%9C%EC%96%B4.pdf)|
-|Power Electronics|PSIM Control I|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/dcdc/PSIM%20STUDY%201.pdf)|
-|Power Electronics|PSIM Control II|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/dcdc/PSIM%20STUDY%202.pdf)|
-|Power Electronics|SMPS Power Electronics 3|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/dcdc/SMPS-chapter3.pdf)|
-|Power Electronics|Buck Converter 12V 1A|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/dcdc/BUCK_CONVERTER_12V_1A_design.pdf)|
-|Power Electronics|Buck Design Tool|[pdf](https://github.com/KOITT2/RC_Car/blob/71b9861bdc12ff012a3479a00452fe933cc5474b/circuit/dcdc/buck%20design%20tool.xls)|
-|MCU|Cortex-R5F Based ESC Calibration|[pdf](https://github.com/KOITT2/RC_Car/blob/ec37dab8194b4303537663e19f7a4eda15f61fdf/experiment/doc/ESC%20Calibration.pdf)|
-|MCU|Cortex-R5F Based MPU9250 Control|[zip](https://github.com/KOITT2/RC_Car/tree/master/mcu_proj/__MPU9250.zip)|
-|MCU|Cortex-R5F Based MPU9250 Control Doc|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/_MPU9250.pdf)|
-|MCU|Cortex-R5F Based MPU6050 with Integrated Kalman Filter Test|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/MPU6050%2BSTM32.pdf)|
-|MCU|Quadcopter|[link](https://github.com/KOITT2/RC_Car/tree/master/mcu_proj/QuadCopter)|
-|MCU|Quadcopter Non RTOS Test|[link](https://github.com/KOITT2/RC_Car/tree/master/mcu_proj/pre_QuadCopter(none_RTOS))|
-|MCU|Remote Controller Control|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/RC_CONTROLLER.pdf)|
-|MCU|Remote Controller Code|[link](https://github.com/KOITT2/RC_Car/tree/master/mcu_proj/RC_controller_ecap)|
-|MCU|BME280 Altitude Sensor Control|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/_BMP280.pdf)|
-|MCU|BME280 Altitude Sensor Code|[link](https://github.com/KOITT2/RC_Car/tree/master/mcu_proj/I2C_BMP280)|
-|MCU|MS5611 Control Doc|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/MS5611.pdf)|
-|MCU|MS5611 Control Code|[link](https://github.com/KOITT2/RC_Car/tree/master/mcu_proj/I2C_MS5611)|
-|FPGA|PWM & eCAP Verilog 2 VHDL|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/FPGA_verilog_to_vhdl.pdf)|
-|FreeRTOS|Dual PID Based QuadCopter|[link](https://github.com/KOITT2/RC_Car/tree/master/mcu_proj/RTOS_QUADCOPTER)|
-|Week Mission|1st Mission|[pdf](https://github.com/KOITT2/RC_Car/blob/44ef2d0eb742be4c8dc96f7bd83f39ad55f4ae06/cur_present/%EB%B0%95%ED%98%84%EC%9A%B0%20-%201%20%EC%A3%BC%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A4%91%EA%B0%84%20%EB%B0%9C%ED%91%9C.pdf)|
-|Week Mission|2nd Mission|[pdf](https://github.com/KOITT2/RC_Car/blob/98d0f6031a1141460014fd1ce2336c72acba865f/cur_present/%EB%B0%95%ED%98%84%EC%9A%B0%20-%202%EC%A3%BC%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A4%91%EA%B0%84%20%EB%B0%9C%ED%91%9C.pdf)|
-|Week Mission|3rd Mission|[pdf](https://github.com/KOITT2/RC_Car/blob/312b76ec25f050fe1c76bdc70eae0706c3966c64/cur_present/%EC%95%84%EC%9D%B4%EC%96%B8%EB%93%9C%EB%A1%A0/%EB%B0%95%ED%98%84%EC%9A%B0/%EB%B0%95%ED%98%84%EC%9A%B0%20-%203%20%EC%A3%BC%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A4%91%EA%B0%84%20%EB%B0%9C%ED%91%9C.pdf)|
-|Week Mission|4th Mission|[pdf](https://github.com/KOITT2/RC_Car/blob/master/cur_present/%EC%95%84%EC%9D%B4%EC%96%B8%EB%93%9C%EB%A1%A0/%EB%B0%95%ED%98%84%EC%9A%B0/%EB%B0%95%ED%98%84%EC%9A%B0%20-%204%20%EC%A3%BC%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A4%91%EA%B0%84%20%EB%B0%9C%ED%91%9C.pdf)|
-|Week Mission|5th Mission|[pdf](https://github.com/KOITT2/RC_Car/blob/master/cur_present/%EC%95%84%EC%9D%B4%EC%96%B8%EB%93%9C%EB%A1%A0/%EB%B0%95%ED%98%84%EC%9A%B0/%EB%B0%95%ED%98%84%EC%9A%B0%20-%206%20%EC%A3%BC%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A4%91%EA%B0%84%20%EB%B0%9C%ED%91%9C.pdf)|
-|Week Mission|6th Mission|[pdf](https://github.com/KOITT2/RC_Car/blob/master/cur_present/%EC%95%84%EC%9D%B4%EC%96%B8%EB%93%9C%EB%A1%A0/%EB%B0%95%ED%98%84%EC%9A%B0/%EB%B0%95%ED%98%84%EC%9A%B0%20-%207%20%EC%A3%BC%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A4%91%EA%B0%84%20%EB%B0%9C%ED%91%9C.pdf)|
-|BOM|Quadcopter BOM List|[pdf](https://github.com/KOITT2/RC_Car/blob/master/cur_present/%EC%95%84%EC%9D%B4%EC%96%B8%EB%93%9C%EB%A1%A0/%EB%B0%95%ED%98%84%EC%9A%B0/%EB%93%9C%EB%A1%A0%20%EC%A0%9C%EC%9E%91%EC%97%90%20%ED%95%84%EC%9A%94%ED%95%9C%20%EB%B6%80%ED%92%88%EA%B3%BC%20%EA%B2%AC%EC%A0%81(%2B%EB%AA%A8%ED%84%B0%20%EC%B6%94%EB%A0%A5%2C%20%EB%B9%84%ED%96%89%EC%8B%9C%EA%B0%84%20%EA%B3%84%EC%82%B0).pdf)|
-|Design|Non Inertia Frame|[pdf](https://github.com/KOITT2/RC_Car/blob/master/doc/design/none_inertia_frame.pdf)|
+|Power Electronics|Introduction Buck Converter|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/circuit/book_study/BUCK%20CONVERTER%20.pdf)|
+|Power Electronics|PSIM PID Control|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/circuit/book_study/PSIM%20PID%EC%A0%9C%EC%96%B4.pdf)|
+|Power Electronics|PSIM Control I|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/circuit/book_study/PSIM%20STUDY%201.pdf)|
+|Power Electronics|PSIM Control II|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/circuit/book_study/PSIM%20STUDY%202.pdf)|
+|Power Electronics|SMPS Power Electronics 3|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/circuit/book_study/SMPS-chapter3.pdf)|
+|Power Electronics|Buck Converter 12V 1A|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/circuit/book_study/BUCK_CONVERTER_12V_1A_design.pdf)|
+|Power Electronics|Buck Design Tool|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/circuit/book_study/buck%20design%20tool.xls)|
+|MCU|Cortex-R5F Based ESC Calibration|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/ESC%20Calibration.pdf)|
+|MCU|Cortex-R5F Based MPU9250 Control|[zip](https://github.com/SHL-Third-Education/Project/blob/master/mcu_proj/__MPU9250.zip)|
+|MCU|Cortex-R5F Based MPU9250 Control Doc|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/_MPU9250.pdf)|
+|MCU|Cortex-R5F Based MPU6050 with Integrated Kalman Filter Test|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/MPU6050%2BSTM32.pdf)|
+|MCU|Quadcopter|[link](https://github.com/SHL-Third-Education/Project/tree/master/mcu_proj/QuadCopter)|
+|MCU|Quadcopter Non RTOS Test|[link](https://github.com/SHL-Third-Education/Project/tree/master/mcu_proj/pre_QuadCopter(none_RTOS))|
+|MCU|Remote Controller Control|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/RC_CONTROLLER.pdf)|
+|MCU|Remote Controller Code|[link](https://github.com/SHL-Third-Education/Project/tree/master/mcu_proj/RC_controller_ecap)|
+|MCU|BME280 Altitude Sensor Control|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/_BMP280.pdf)|
+|MCU|BME280 Altitude Sensor Code|[link](https://github.com/SHL-Third-Education/Project/tree/master/mcu_proj/I2C_BMP280)|
+|MCU|MS5611 Control Doc|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/MS5611.pdf)|
+|MCU|MS5611 Control Code|[link](https://github.com/SHL-Third-Education/Project/tree/master/mcu_proj/I2C_MS5611)|
+|FPGA|PWM & eCAP Verilog 2 VHDL|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/Zybo/FPGA_verilog_to_vhdl.pdf)|
+|FreeRTOS|Dual PID Based QuadCopter|[link](https://github.com/SHL-Third-Education/Project/tree/master/mcu_proj/RTOS_QUADCOPTER)|
+|Week Mission|1st Mission|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/cur_present/%EC%95%84%EC%9D%B4%EC%96%B8%EB%93%9C%EB%A1%A0/%EB%B0%95%ED%98%84%EC%9A%B0/%EB%B0%95%ED%98%84%EC%9A%B0%20-%201%20%EC%A3%BC%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A4%91%EA%B0%84%20%EB%B0%9C%ED%91%9C.pdf)|
+|Week Mission|2nd Mission|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/cur_present/%EC%95%84%EC%9D%B4%EC%96%B8%EB%93%9C%EB%A1%A0/%EB%B0%95%ED%98%84%EC%9A%B0/%EB%B0%95%ED%98%84%EC%9A%B0%20-%202%EC%A3%BC%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A4%91%EA%B0%84%20%EB%B0%9C%ED%91%9C.pdf)|
+|Week Mission|3rd Mission|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/cur_present/%EC%95%84%EC%9D%B4%EC%96%B8%EB%93%9C%EB%A1%A0/%EB%B0%95%ED%98%84%EC%9A%B0/%EB%B0%95%ED%98%84%EC%9A%B0%20-%203%20%EC%A3%BC%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A4%91%EA%B0%84%20%EB%B0%9C%ED%91%9C.pdf)|
+|Week Mission|4th Mission|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/cur_present/%EC%95%84%EC%9D%B4%EC%96%B8%EB%93%9C%EB%A1%A0/%EB%B0%95%ED%98%84%EC%9A%B0/%EB%B0%95%ED%98%84%EC%9A%B0%20-%204%20%EC%A3%BC%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A4%91%EA%B0%84%20%EB%B0%9C%ED%91%9C.pdf)|
+|Week Mission|5th Mission|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/cur_present/%EC%95%84%EC%9D%B4%EC%96%B8%EB%93%9C%EB%A1%A0/%EB%B0%95%ED%98%84%EC%9A%B0/%EB%B0%95%ED%98%84%EC%9A%B0%20-%206%20%EC%A3%BC%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A4%91%EA%B0%84%20%EB%B0%9C%ED%91%9C.pdf)|
+|Week Mission|6th Mission|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/cur_present/%EC%95%84%EC%9D%B4%EC%96%B8%EB%93%9C%EB%A1%A0/%EB%B0%95%ED%98%84%EC%9A%B0/%EB%B0%95%ED%98%84%EC%9A%B0%20-%207%20%EC%A3%BC%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A4%91%EA%B0%84%20%EB%B0%9C%ED%91%9C.pdf)|
+|BOM|Quadcopter BOM List|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/cur_present/%EC%95%84%EC%9D%B4%EC%96%B8%EB%93%9C%EB%A1%A0/%EB%B0%95%ED%98%84%EC%9A%B0/%EB%93%9C%EB%A1%A0%20%EC%A0%9C%EC%9E%91%EC%97%90%20%ED%95%84%EC%9A%94%ED%95%9C%20%EB%B6%80%ED%92%88%EA%B3%BC%20%EA%B2%AC%EC%A0%81(%2B%EB%AA%A8%ED%84%B0%20%EC%B6%94%EB%A0%A5%2C%20%EB%B9%84%ED%96%89%EC%8B%9C%EA%B0%84%20%EA%B3%84%EC%82%B0).pdf)|
+|Design|Non Inertia Frame|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/physics/none_inertia_frame.pdf)|
