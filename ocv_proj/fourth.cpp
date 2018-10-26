@@ -6,6 +6,24 @@
 using namespace cv;
 using namespace std;
 
+Mat custom_roi(Mat img)
+{
+	Mat output;
+	Mat mask = Mat::zeros(img.size(), img.type());
+
+	Point pts[4] = {
+					Point(460, 310),
+					Point(480, 310),
+					Point(800, 539),
+					Point(120, 539)
+				   };
+
+	fillConvexPoly(mask, pts, 4, Scalar(0, 255, 0));
+	bitwise_and(img, mask, output);
+
+	return output;
+}
+
 int main(int argc, char **argv)
 {
 	Mat img = imread("sample.jpg", -1);
@@ -18,22 +36,14 @@ int main(int argc, char **argv)
 	if(img.empty())
 		return -1;
 
-	printf("h - 310 = %d, w - 539 = %d, h - 120 = %d, w - 475 = %d\n",
-			h - 310, w - 539, h - 120, w - 475);
-
-	//Mat roi = img(Range(h - 310, w - 539), Range(h - 120, w - 475));
-	//Mat roi = img(Range(310, 539), Range(120, 475));
-	//Mat roi = img(Range(310, 475), Range(539, 539));
-	//Mat roi = img(Range(539, 800), Range(310, 120));
-	//Mat roi = img(Range(310, 120), Range(539, 800));
-	Mat roi = img(Range(310, 539), Range(120, 800));
+	Mat croi = custom_roi(img);
 
 	imshow("Original Image", img);
-	imshow("ROI Image", roi);
+	imshow("Custom ROI Image", croi);
 
 	waitKey(0);
 
-	destroyWindow("ROI Image");
+	destroyWindow("Custom ROI Image");
 	destroyWindow("Original Image");
 
 	return 0;
