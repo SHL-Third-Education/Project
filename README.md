@@ -78,6 +78,7 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |Algorithm|Internal Element Sort|[link](https://github.com/SHL-Third-Education/Project/blob/master/experiment/algorithm/form_arr_sort.c)|
 |Algorithm|Internal Element Descending Sort|[link](https://github.com/SHL-Third-Education/Project/blob/master/experiment/algorithm/form_arr_descend_sort.c)|
 |Algorithm|Red Black Tree Based Min Array Extraction|[link](https://github.com/SHL-Third-Education/Project/blob/master/experiment/algorithm/rbt_arr_extract.c)|
+|Algorithm|N-Order Polyfit Algorithm|[link](https://github.com/SHL-Third-Education/Project/blob/master/experiment/algorithm/polyfit.cpp)|
 |Math|Linear Algebra|[link](https://github.com/SHL-Third-Education/Project/blob/master/experiment/algorithm/linear_algebra.c)|
 |CCS|How to Install CCS on Windows|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/How_to_Install_CCS_on_Windows.pdf)|
 |Arduino|How to Install Arduino on Windows|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/arduino/How_to_Install_Arduino_on_Windows.pdf)|
