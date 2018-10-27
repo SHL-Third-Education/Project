@@ -1,1 +1,5 @@
 lasound, lm
+./a.out 44100 2 120 < Smash.wav
+sudo apt-get install libpulse-dev libmad0-dev libpulse0
+-lpulse -lpulse-simple -lmad
+./play 44100 2 5 < /path/to/file.wav
