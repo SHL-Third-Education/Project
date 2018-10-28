@@ -14,6 +14,7 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
   - [Sanghoon Lee](#sanghoon-lee)
 - [Member](#member)
   - [Hyunwoo Park](#hyunwoo-park)
+  - [Sangjae Ahn](#sangjae-ahn)
 
 
 
@@ -161,3 +162,42 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |Week Mission|6th Mission|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/cur_present/%EC%95%84%EC%9D%B4%EC%96%B8%EB%93%9C%EB%A1%A0/%EB%B0%95%ED%98%84%EC%9A%B0/%EB%B0%95%ED%98%84%EC%9A%B0%20-%207%20%EC%A3%BC%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A4%91%EA%B0%84%20%EB%B0%9C%ED%91%9C.pdf)|
 |BOM|Quadcopter BOM List|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/cur_present/%EC%95%84%EC%9D%B4%EC%96%B8%EB%93%9C%EB%A1%A0/%EB%B0%95%ED%98%84%EC%9A%B0/%EB%93%9C%EB%A1%A0%20%EC%A0%9C%EC%9E%91%EC%97%90%20%ED%95%84%EC%9A%94%ED%95%9C%20%EB%B6%80%ED%92%88%EA%B3%BC%20%EA%B2%AC%EC%A0%81(%2B%EB%AA%A8%ED%84%B0%20%EC%B6%94%EB%A0%A5%2C%20%EB%B9%84%ED%96%89%EC%8B%9C%EA%B0%84%20%EA%B3%84%EC%82%B0).pdf)|
 |Design|Non Inertia Frame|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/physics/none_inertia_frame.pdf)|
+
+
+
+### Sangjae Ahn
+### E-mail Address - sangjae2015@naver.com
+
+![sangjae](./member_profile/sangjae_profile_1.jpg)
+
+|Subject|Title|Link|
+|-|-|-|
+|MCU|Cortex-R5F Based eQEP TRM Analysis|[pdf](https://github.com/KOITT2/RC_Car/blob/b474b0e4c22217db033a3d1bc65639d203444aa2/cur_present/%EB%9D%BC%EC%A0%A0%EC%B9%B4/%EC%95%88%EC%83%81%EC%9E%AC/eQEP_0725.pdf)|
+|MCU|Cortex-R5F Based SPI Analysis & Loopback Test|[pdf](https://github.com/KOITT2/RC_Car/blob/9219044272f63e2aea244204703a762cc924a63b/cur_present/%EB%9D%BC%EC%A0%A0%EC%B9%B4/%EC%95%88%EC%83%81%EC%9E%AC/SPI%20%ED%86%B5%EC%8B%A0%20%EA%B0%9C%EB%85%90%20%EB%B0%8F%20Loopback%20%EA%B5%AC%ED%98%84.pdf)|
+|MCU|Arduino Based ESP8266 Wi-Fi Module Firmware Upgrade|[pdf](https://github.com/KOITT2/RC_Car/blob/9f90c025ba363fa29cf6b206d5bd31125a4a26d3/test/test/1%EC%A3%BC%EC%B0%A8/wifi%20%EB%AA%A8%EB%93%88%20%ED%8E%8C%EC%9B%A8%EC%96%B4%20%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C.pdf)|
+|MCU|SPI Communication(need to modify)|[pdf](https://github.com/KOITT2/RC_Car/blob/master/cur_present/%EB%9D%BC%EC%A0%A0%EC%B9%B4/%EC%95%88%EC%83%81%EC%9E%AC/SPI%20%EA%B5%AC%ED%98%84.pdf)|
+|MCU|SPI Need to Modify|[pdf](https://github.com/KOITT2/RC_Car/blob/master/cur_present/%EB%9D%BC%EC%A0%A0%EC%B9%B4/%EC%95%88%EC%83%81%EC%9E%AC/SPI%20%EA%B5%AC%ED%98%84(MCU-MCU).pdf)|
+|MCU|Collision Warn Sound Buzzer|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/BUZZER.pdf)|
+|MCU|Ultrasonic HC SR-04 Control|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/Ultrasonic%20Ranging%20Module%20HC%20-%20SR04.pdf)|
+|MCU|FM Radio with STM32F407|[pdf](https://github.com/KOITT2/RC_Car/blob/master/mcu_proj/FM%20Radio%20%EC%84%A4%EA%B3%84%20%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf)|
+|STM32F4|Getting Started STM32 with TrueStudio|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/Getting%20Started%20STM32%20with%20True%20STUDIO%20%26%20CubeMx.pdf)|
+|STM32F4|GPIO Control with STM32F407|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/GPIO%20based%20on%20stm32.pdf)|
+|STM32F4|UART Control with STM32F407|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/UART%20based%20on%20stm32.pdf)|
+|STM32F4|Timer Based PWM with STM32F407|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/TIMER%20%26%20PWM%20control%20with%20STM32F407.pdf)|
+|STM32F4|ADC & DAC Control with STM32F407|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/ADC%20with%20DMA%20%26%20DAC.pdf)|
+|STM32F4|I2C Control with STM32F407|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/I2C%20Control%20with%20STM32F407.pdf)|
+|STM32F4|MPU9250 Control with STM32F407|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/Control%20MPU9250%20with%20I2C.pdf)|
+|STM32F4|STM32F407 Based MPU9250 Control Code|[link](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/MPU9250_TEST.zip)|
+|FreeRTOS|FreeRTOS on STM32F407|[pdf](https://github.com/KOITT2/RC_Car/blob/master/experiment/doc/FreeRTOS%20based%20on%20STM32F407.pdf)|
+|FreeRTOS|All Summation MCU Code|[link](https://github.com/KOITT2/RC_Car/tree/master/mcu_proj/FreeRTOS)|
+|Week Mission|1st Week Mission|[pdf](https://github.com/KOITT2/RC_Car/blob/master/cur_present/%EB%9D%BC%EC%A0%A0%EC%B9%B4/%ED%8C%80%EB%B0%9C%ED%91%9C/9%EC%A3%BC%EC%B0%A8%20%EB%9D%BC%EC%A0%A0%EC%B9%B4%20%EB%B0%9C%ED%91%9C.pdf)|
+|PCB|Add Library on Altium|[pdf](https://github.com/KOITT2/RC_Car/blob/master/pcb/install%20Library%20based%20on%20Alitum.pdf)|
+|PCB|Altium Based Circuit Simulation|[pdf](https://github.com/KOITT2/RC_Car/blob/master/pcb/Schematic%2C%20Simulation%2C%20PCB%20Design%20(Altium).pdf)|
+|Week Mission|1st Mission|[pdf](https://github.com/KOITT2/RC_Car/blob/master/cur_present/%EB%9D%BC%EC%A0%A0%EC%B9%B4/%ED%8C%80%EB%B0%9C%ED%91%9C/10%EC%A3%BC%EC%B0%A8%20%EB%9D%BC%EC%A0%A0%EC%B9%B4%20%EB%B0%9C%ED%91%9C.pdf)|
+|Circuit|Practical IR2110 Based Circuit|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/IR2110%20TEST.pdf)|
+|Circuit|Practical IR2110 + TL494 Based Circuit|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/IR2110%2BTL494%20TEST.pdf)|
+|Circuit|LM2576-ADJ Based DC-DC Converter|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/DCDC%20converter%20based%20on%20LM2576-adj.pdf)|
+|Circuit|TL494 Based DC-DC Converter|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/DCDC%20converter%20based%20on%20TL494.pdf)|
+|Circuit|TL494 + IR2110 Based DC-DC Converter|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/DC-DC%20CONVERTER%20TEST%20(IR2110%2BTL494).pdf)|
+|Circuit|Astable Multivibrator Analysis|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/%EB%B9%84%EC%95%88%EC%A0%95%20%EB%A9%80%ED%8B%B0%EB%B0%94%EC%9D%B4%EB%B8%8C%EB%A0%88%EC%9D%B4%ED%84%B0%20%ED%9A%8C%EB%A1%9C%20%EB%B6%84%EC%84%9D.pdf)|
+|Circuit|Fan Motor Control with Temperature Sensor|[pdf](https://github.com/KOITT2/RC_Car/blob/master/circuit/Control%20fan%20motor%20Circuit.pdf)|
