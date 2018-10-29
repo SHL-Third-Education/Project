@@ -172,7 +172,7 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 ### Sangjae Ahn
 ### E-mail Address - sangjae2015@naver.com
 
-![sangjae](./member_profile/sangjae_profile_1.jpg)
+![sangjae](./member_profile/sangjae_profile_2.jpg)
 
 |Subject|Title|Link|
 |-|-|-|
