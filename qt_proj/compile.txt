@@ -1,3 +1,7 @@
-qmake -project
 qmake
+make
+
+or
+
+qmake *.pro
 make
