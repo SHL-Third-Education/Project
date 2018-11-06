@@ -127,6 +127,7 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |VMware|How to Install VMWare 12 on Linux|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/VMware/How_to_Install_VMWare_12_on_Linux.pdf)|
 |VMware|How to Install Windows 7 on Linux VMWare|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/VMware/How_to_Install_Windows_7_on_Linux_VMWare.pdf)|
 |VMware|How to Co-Work with VMware Windows on Linux|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/VMware/How_to_CoWork_with_VMware_Windows_on_Linux.pdf)|
+|GStreamer|GStreamer Basics|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/gstreamer/GStreamer_Basics.pdf)|
 |QT5|QT5 Basic|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/Qt5/QT5_Basic.pdf), [link](https://github.com/SHL-Third-Education/Project/blob/master/qt_proj/qt_img_viewer.cpp)|
 |BeagleBone|Ready to Analysis Linux Device Driver|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/device_driver/Ready_to_Analysis_BeagleBone_Based_Device_Driver.pdf)|
 
