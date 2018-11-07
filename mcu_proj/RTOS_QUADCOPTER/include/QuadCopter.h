@@ -11,6 +11,7 @@
 #include "MPU9250.h"
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 #include <FreeRTOS.h>
 #include "FreeRTOSConfig.h"
@@ -18,33 +19,33 @@
 #include "os_task.h"
 #include "os_projdefs.h"
 #include "os_semphr.h"
-#include "os_task.h"
 
 
-#define THROTTLE_MAX    1600
-#define THROTTLE_MIN    1060
-#define MAX_PID_OUTPUT   300
-#define ANTI_WINDUP_LIMIT   30
+#define THROTTLE_MAX    1700
+#define THROTTLE_MIN    1000
+#define MAX_PID_OUTPUT   400
+#define ANTI_WINDUP_LIMIT   20
 
 //이중루프PID에서 제어할 변수들(Roll, Pitch, Yaw)//
 float roll_target_angle = 0.0;
 float roll_angle_in;
 float roll_rate_in;
-float roll_stabilize_kp = 8;  // angle kp     6.5
+float roll_stabilize_kp = 8.0;  // angle kp     6.5
 float roll_rate_kp = 0.30;  // angle rate kp setting   0.3
-float roll_rate_ki = 0.3805;  // angle rate ki setting   0.37
-float roll_rate_kd = 0.03;  // angle rate kd setting   0.0042
+float roll_rate_ki = 0.00028;  // angle rate ki setting   0.37
+float roll_rate_kd = 0.01;  // angle rate kd setting   0.032
 float roll_err_pre = 0;
 float roll_rate_iterm;
 float roll_output;
 
 float pitch_target_angle = 0.0;
+
 float pitch_angle_in;
 float pitch_rate_in;
-float pitch_stabilize_kp = 8;  // 1.8
+float pitch_stabilize_kp = 8.0;  // 1.8
 float pitch_rate_kp = 0.30;  // 0.004 0379340
-float pitch_rate_ki = 0.3805;  // 0.0035
-float pitch_rate_kd = 0.03;   // 0.0006
+float pitch_rate_ki = 0.00028;  // 0.0035      --- 0.01 ~ 0.03
+float pitch_rate_kd = 0.01;   // 0.0006
 float pitch_err_pre = 0;
 float pitch_rate_iterm = 0;
 float pitch_output = 0;
@@ -52,10 +53,10 @@ float pitch_output = 0;
 float yaw_target_angle = 0.0;
 float yaw_angle_in;
 float yaw_rate_in;
-float yaw_stabilize_kp = 0.0;
-float yaw_rate_kp = 0.0;
-float yaw_rate_ki = 0.000;
-float yaw_rate_kd = 0;
+float yaw_stabilize_kp = 0;
+float yaw_rate_kp = 0.6;
+float yaw_rate_ki = 0.02;
+float yaw_rate_kd = 0.4;
 float yaw_err_pre = 0;
 float yaw_rate_iterm = 0;
 float yaw_output = 0;
@@ -163,9 +164,9 @@ void initYPR(void)
     init_pitch = avr_pitch;
     init_roll = avr_roll;
     init_yaw = avr_yaw;
-    roll_target_angle = init_roll;
-    pitch_target_angle = init_pitch;
-    yaw_target_angle = init_yaw;
+    roll_target_angle = roll-init_roll;
+    pitch_target_angle =pitch-init_pitch;
+    yaw_target_angle = yaw-init_yaw;
 }
 
 /*이중 PID 쿼드 제어에 효과적. angle의 오차를 목표로 두고 제어하므로 더 안정적이다.*/
@@ -196,11 +197,19 @@ void dualPID(float target_angle,
   rate_dterm = (rate_error - *rate_err_pre) * (rate_kd) / dt;
   *rate_err_pre = rate_error;
 
+  if(*rate_iterm > ANTI_WINDUP_LIMIT){
+      *rate_iterm = ANTI_WINDUP_LIMIT;
+  }else if( *rate_iterm < -ANTI_WINDUP_LIMIT){
+      *rate_iterm = -ANTI_WINDUP_LIMIT;
+  }
+
+
   if(*output > MAX_PID_OUTPUT){
       *output = MAX_PID_OUTPUT;
   }else if(*output < -MAX_PID_OUTPUT){
       *output = -MAX_PID_OUTPUT;
   }
+
   *output = rate_pterm + *rate_iterm + rate_dterm; //최종 출력 : 각속도 비례항 + 각속도 적분항 + 안정화 적분항//
 }
 /* 각 motor RPM 초기화*/
@@ -231,11 +240,20 @@ void calcMotorPWM(void){
 //      motorB_PWM = throttle + pitch_output - roll_output - yaw_output ; // rear -left ccw
 //      motorC_PWM = throttle + pitch_output + roll_output + yaw_output ; // rear -right  cw
 //      motorD_PWM = throttle - pitch_output + roll_output - yaw_output ; // front - right ccw
-        motorA_PWM = throttle + pitch_output + roll_output - yaw_output ;
-        motorB_PWM = throttle - pitch_output + roll_output + yaw_output ;
-        motorC_PWM = throttle - pitch_output - roll_output - yaw_output ;
-        motorD_PWM = throttle + pitch_output - roll_output + yaw_output ;
+//        motorA_PWM = throttle - yaw_output ;
+//        motorB_PWM = throttle + yaw_output ;
+//        motorC_PWM = throttle - yaw_output ;
+//        motorD_PWM = throttle  + yaw_output ;
+
+      motorA_PWM = throttle - pitch_output - roll_output - yaw_output ;
+      motorB_PWM = throttle - pitch_output + roll_output + yaw_output ;
+      motorC_PWM = throttle + pitch_output + roll_output - yaw_output ;
+      motorD_PWM = throttle + pitch_output - roll_output + yaw_output ;
       hold_throttle = throttle;
+  }else if(stop_n_start == -1){
+      pitch_output = 0;
+      roll_output = 0;
+      yaw_output = 0;
   }
   //PWM값은 1000~2000이므로 각 경계값마다의 보정작업, 내 모터는 토크가 워낙 쎄기 때문에 최대 1500으로 일단 고정.//
   if(motorA_PWM < THROTTLE_MIN){

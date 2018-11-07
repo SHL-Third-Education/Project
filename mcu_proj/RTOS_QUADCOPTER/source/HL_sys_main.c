@@ -1,41 +1,58 @@
 #include "MPU9250.h"
 #include "QuadCopter.h"
 #include "MS5611.h"
+#include "Kalman.h"
 
 int i;
 int real_elev,real_rudd,real_ail,throttle;  // 조종기 전후진, 좌우회전, 제자리 회전, 스로틀
 int quad_start; // 쿼드콥터 켜기
 
-xTaskHandle task_MPU6050_handle;  // MPU6050 센서 값 다루는 테스크
+/*Kalman output variables*/
+float roll_kalman_output;
+float pitch_kalman_output;
+float yaw_kalman_output;
+
+
+xTaskHandle task_Kalman_handle;  // 칼만필터 태스크
 xTaskHandle task_MPU9250_handle;  // MPU9250
 xTaskHandle task_CALATT_handle; // 자세 제어 테스크
 xTaskHandle task_CALALT_handle; // 고도 제어 테스크
 xTaskHandle task_CONTROLLER_handle; // 조종기 테스크
 
+xTaskHandle task_check_handle;
+
 QueueHandle_t mutex;
+
 
 void send_data(sciBASE_t *sci, uint8* msg, int length);
 
 
 void MPU9250_TASK(void *pbParameters){
 
+
+
     for(;;){
 
         xSemaphoreTake(mutex, portMAX_DELAY);
-        get_YPR();
 
-        roll_angle_in = roll - init_roll;
-        pitch_angle_in = pitch - init_pitch;
-        yaw_angle_in = yaw - init_yaw;
+
+        get_YPR();
+//        /* Kalman filter */
+        roll_kalman_output = kalman_update(&roll_kalman_state, g_xyz[0], roll);
+        pitch_kalman_output = kalman_update(&pitch_kalman_state, g_xyz[1], pitch);
+        yaw_kalman_output = kalman_update(&yaw_kalman_state, g_xyz[2], yaw);
+
+        roll_angle_in = roll_kalman_output - init_roll ;
+        pitch_angle_in = pitch_kalman_output - init_pitch ;
+        yaw_angle_in = yaw_kalman_output  - init_yaw;
 
         roll_rate_in = gyro_roll_input;
         pitch_rate_in = gyro_pitch_input;
         yaw_rate_in = gyro_yaw_input;
+//        ltoa();
 
         h_cal_controller(quad_start);
 
-
-        vTaskDelay(10);
         if (stop_n_start == -1)
         {
              pwmSet();
@@ -48,11 +65,9 @@ void MPU9250_TASK(void *pbParameters){
         if (stop_n_start == 0)  // 수동모드
         {
 
+           calcYPRtoDualPID();
 
-            calcYPRtoDualPID();
-
-
-            calcMotorPWM();
+           calcMotorPWM();
 
 
         }
@@ -77,8 +92,10 @@ void MPU9250_TASK(void *pbParameters){
 }
 
 
+
 int main(void)
 {
+
 
 
     sciInit();
@@ -95,13 +112,13 @@ int main(void)
     etpwmInit();
     disp_set("ETPWM Configuration Success!!\n\r\0");
 
-
     etpwmStartTBCLK();
     wait(10000);
 
     pwmSet();
 
     uint8 c = readByte(MPU9250_ADDRESS, WHO_AM_I_MPU9250); // MPU9250 인식이 되어 제대로 값이 읽어져 오면 0x71이 읽힘.
+
 
     if (c == 0x71)
     {
@@ -141,10 +158,13 @@ int main(void)
         ecapEnableCapture(ecapREG6);
         disp_set("Init Controller Success!!\n\r\0");
 
+        kalman_init(&roll_kalman_state, dt, 0.00002, 0.001, 0.003);
+        kalman_init(&pitch_kalman_state, dt, 0.00002, 0.001, 0.003);
+        kalman_init(&yaw_kalman_state, dt, 0.00002, 0.001, 0.003);
+        disp_set("Kalman Init!!\n\r\0");
+
         initYPR();  // roll,pitch,yaw를 2000번 돌려서 0도를 잡기 위함.
         disp_set("Init YPR Success!!\n\r\0");
-
-
 
         wait(1000000);
 
@@ -164,6 +184,7 @@ int main(void)
 
         while(1);
     }
+
 
     vTaskStartScheduler();
 
