@@ -51,6 +51,7 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |Battery|Battery(16000mAh) TATTU Translation to Korean|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/Battery(16000mAh)_TATTU.txt)|
 |Battery|Battery Charger|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/Battery_Charger.pdf)|
 |MCU|Cortex-R5F Based GPIO Control|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/GPIO_Basic.pdf)|
+|MCU|Cortex-R5F Based UART Control|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/UART_Basic.pdf)|
 |MCU|Cortex-R5F Can Test|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/CAN_Test.pdf)|
 |MCU|Configuring CAN TMS570 Translation(Korean)|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/Configuring%20CAN%20TMS570.txt)|
 |MCU|Cortex-R5F I2C Howto|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/Cortex_R5_I2C_Howto.pdf)|
