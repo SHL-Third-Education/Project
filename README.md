@@ -133,6 +133,8 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |VMware|How to Co-Work with VMware Windows on Linux|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/VMware/How_to_CoWork_with_VMware_Windows_on_Linux.pdf)|
 |GStreamer|GStreamer Basics|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/gstreamer/GStreamer_Basics.pdf)|
 |QT5|QT5 Basic|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/Qt5/QT5_Basic.pdf), [link](https://github.com/SHL-Third-Education/Project/blob/master/qt_proj/qt_img_viewer.cpp)|
+|QT5|Hello QT5|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/Qt5/AM5728_QT5_Lab_1_Hello_QT5.pdf)
+|QT5|QWT Install & Usage|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/Qt5/QWT_Install_and_Usage.pdf)
 |BeagleBone|Ready to Analysis Linux Device Driver|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/device_driver/Ready_to_Analysis_BeagleBone_Based_Device_Driver.pdf)|
 
 
