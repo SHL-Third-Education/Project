@@ -103,6 +103,7 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |PCB|Altium Designer Basics II|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/pcb/Altium_Basics_II.pdf)|
 |FPGA|How to commit FPGA PetaLinux|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/Zybo/How_to_commit_FPGA_Petalinux_Project.pdf)|
 |PCB|High Voltage Gate Driver PCB I|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/pcb/High_Voltage_Board_PCB.pdf)|
+|DSP|AM5728 OpenCV Test|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/AM5728_OpenCV_Test.pdf)|
 |DSP|VCP Based Can Server|[link](https://github.com/SHL-Third-Education/Project/blob/master/dsp_proj/vcp_can_serv.c)|
 |DSP|Fifo Based Can Server|[link](https://github.com/SHL-Third-Education/Project/blob/master/dsp_proj/fifo_can_serv.c)|
 |DSP|Fifo Based Can Server with FPGA Lan Server|[link](https://github.com/SHL-Third-Education/Project/blob/master/dsp_proj/fifo_can_serv_final.c)|
