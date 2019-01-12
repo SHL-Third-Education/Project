@@ -66,6 +66,7 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |MCU|Cortex-R5F Based BLDC Motor Manual Calibration I|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/legacy/motor_control/ESCCalibration.pdf)|
 |MCU|Cortex-R5F Based BLDC Motor Manual Calibration II|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/legacy/motor_control/MCU%EC%97%90%EC%84%9C%20%EB%AA%A8%ED%84%B0%20Calibration%20%EC%84%A4%EC%A0%95.pdf)|
 |Design|Mastering Kalman Filter|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/control_theory/Upgrade_Kalman.pdf)|
+|Control Theory|Kalman Test|[link](https://github.com/SHL-Third-Education/Project/tree/master/experiment/control_theory)|
 |FPGA|FPGA Zynq Zybo Based MPU6050 Control|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/Zybo/Zynq_Zybo_Based_MPU6050_Control.pdf)|
 |Statistics|All of statistics Library|[link](https://github.com/SHL-Third-Education/Project/tree/master/experiment/statistics)|
 |Character Set|Character Set Conversion|[link](https://github.com/SHL-Third-Education/Project/tree/master/experiment/char_set)|
