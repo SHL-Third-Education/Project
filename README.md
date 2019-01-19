@@ -159,6 +159,8 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |Matlab|Conditional Executed Subsystem(Enabled)|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/matlab/Conditional_Executed_Subsystem\(Enabled\).pdf)|
 |Matlab|Matlab to Simulink Data Transfer|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/matlab/Matlab_to_Simulink_Data_Transfer.pdf)|
 |BeagleBone|Ready to Analysis Linux Device Driver|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/device_driver/Ready_to_Analysis_BeagleBone_Based_Device_Driver.pdf)|
+|AD9361|AD9361 with ZedBoard Tutorial I|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AD9361/AD9361_with_ZedBoard_Tutorial_I.pdf)|
+|AD9361|AD9361 with ZedBoard Tutorial II|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AD9361/AD9361_with_ZedBoard_Tutorial_II.pdf)|
 
 
 
