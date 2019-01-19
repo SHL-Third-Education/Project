@@ -87,9 +87,16 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |CCS|How to Install CCS on Windows|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/How_to_Install_CCS_on_Windows.pdf)|
 |Arduino|How to Install Arduino on Windows|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/arduino/How_to_Install_Arduino_on_Windows.pdf)|
 |Design|TI AM5728 OpenCL Architecture|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/opencl/OpenCL_with_TI_AM5728.pdf)|
+|Slack|How to create Slack Workspace|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/git/How_to_create_slack_workspace.pdf)|
+|Trello|How to use Trello|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/git/How_to_use_trello.pdf)|
+|Git|Git Lab|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/git/Git_Lab.pdf)|
 |Git|How to Install Git on Windows|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/git/How_to_Install_Git_on_Windows.pdf)|
 |Git and MCU|How to commit Project on GitHub with HET Example|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/How_to_Commit_All_Proj_on_Github.pdf)|
 |Git|How to update git repo normally|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/git/How_to_update_git_repo_normally.pdf)|
+|Git|How to solve when conflict occurance(fast)|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/git/How_to_solve_when_conflict_occurance.pdf)|
+|Git|How to update git repo normally|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/git/How_to_update_git_repo_normally.pdf)|
+|Git|How to interconnect Github with Slack|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/git/How_to_interconnect_github_with_slack.pdf)|
+|Git|How to interconnect Trello with Slack|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/git/How_to_interconnect_trello_with_slack.pdf)|
 |DSP|How to Integrated Test I|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/DSP_Integrated_Test_I.pdf)|
 |DSP|DSP Wi-Fi Secure AP Configuration Script|[link](https://github.com/SHL-Third-Education/Project/tree/master/dsp_proj/wl18xx_config)|
 |DSP|How to make Secure Wi-Fi AP on AM5728|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/How_to_make_Secure_AP.pdf)|
