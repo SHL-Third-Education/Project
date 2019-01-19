@@ -89,6 +89,7 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |Design|TI AM5728 OpenCL Architecture|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/opencl/OpenCL_with_TI_AM5728.pdf)|
 |Git|How to Install Git on Windows|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/git/How_to_Install_Git_on_Windows.pdf)|
 |Git and MCU|How to commit Project on GitHub with HET Example|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/TMS570/How_to_Commit_All_Proj_on_Github.pdf)|
+|Git|How to update git repo normally|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/git/How_to_update_git_repo_normally.pdf)|
 |DSP|How to Integrated Test I|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/DSP_Integrated_Test_I.pdf)|
 |DSP|DSP Wi-Fi Secure AP Configuration Script|[link](https://github.com/SHL-Third-Education/Project/tree/master/dsp_proj/wl18xx_config)|
 |DSP|How to make Secure Wi-Fi AP on AM5728|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AM5728/How_to_make_Secure_AP.pdf)|
@@ -146,6 +147,7 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |Matlab|Simulink Control Basics|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/matlab/Simulink_Control_Basics.pdf)|
 |Matlab|How to use NCO(Numeric Control Oscillator)|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/matlab/How_to_use_NCO.pdf)|
 |Matlab|Conditional Executed Subsystem(Enabled)|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/matlab/Conditional_Executed_Subsystem\(Enabled\).pdf)|
+|Matlab|Matlab to Simulink Data Transfer|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/matlab/Matlab_to_Simulink_Data_Transfer.pdf)|
 |BeagleBone|Ready to Analysis Linux Device Driver|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/device_driver/Ready_to_Analysis_BeagleBone_Based_Device_Driver.pdf)|
 
 
