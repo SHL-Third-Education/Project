@@ -139,6 +139,7 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |QT5|QT5 Basic Event|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/Qt5/AM5728_QT5_Lab_3_Basic_Event.pdf)|
 |QT5|QT5 Exploration|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/Qt5/AM5728_QT5_Lab_4_Exploration.pdf)|
 |QT5|QWT Install & Usage|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/Qt5/QWT_Install_and_Usage.pdf)|
+|Matlab|How to create Simulink Model|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/matlab/How_to_create_Simulink_Model.pdf)|
 |BeagleBone|Ready to Analysis Linux Device Driver|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/device_driver/Ready_to_Analysis_BeagleBone_Based_Device_Driver.pdf)|
 
 
