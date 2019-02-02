@@ -102,14 +102,14 @@ void set_bldc_vcp_tx_buf(char *buf, char *tx_buf, int protocol)
 	//memmove(temp, &buf[2], 4);
 
 	tx_buf[5] = protocol;
-	tx_buf[6] = '32';
-	tx_buf[7] = '32';
-	tx_buf[8] = buf[2]
-	tx_buf[9] = '32';
+	tx_buf[6] = 32;
+	tx_buf[7] = 32;
+	tx_buf[8] = buf[2];
+	tx_buf[9] = 32;
 	tx_buf[10] = buf[3];
-	tx_buf[11] = '32';
+	tx_buf[11] = 32;
 	tx_buf[12] = buf[4];
-	tx_buf[13] = '32';
+	tx_buf[13] = 32;
 	tx_buf[14] = buf[5];
 
 	printf_can_arr(tx_buf, 22);
