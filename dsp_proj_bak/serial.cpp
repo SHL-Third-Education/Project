@@ -25,7 +25,7 @@ int main(void)
     struct pollfd   poll_events;
     int poll_state;
 
-    fd = open("/dev/ttyUSB1", O_RDWR | O_NOCTTY);
+    fd = open("/dev/ttyUSB0", O_RDWR | O_NOCTTY);
     if( 0 > fd )
     {
         printf("open error\n");
