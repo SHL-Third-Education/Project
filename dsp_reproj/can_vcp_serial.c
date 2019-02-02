@@ -55,10 +55,11 @@ void serial(char* dev)
     int    fd;
        int    ndx;
        int    cnt;
-	char rx_buf[22] = {0};
+	char tmp[1024] = {0};
+	char rx_buf[32] = {0};
        char   buf[1024] = {'x', '1', 32,
-			   32, '1', 32, '2', 32, '3', 32, '4',
-			   32, '5', 32, '6', 32, '7', 32, '8',
+			   32, 'd', 32, '1', 32, '5', 32, '0',
+			   32, '0', 32, '0', 32, '7', 32, '8',
 			   '\r', '\n'};
        char   tx_buf[1024] = {0x2, 0x0, 0x8, 0x40, 0x0, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x49, 0x3};
        int tx_cnt;
@@ -67,7 +68,8 @@ void serial(char* dev)
        int    poll_state;
        int i;
        // 시리얼 포트를 open
-       fd = open( dev, O_RDWR | O_NOCTTY | O_NONBLOCK );        // 디바이스를 open 한다.
+       //fd = open( dev, O_RDWR | O_NOCTTY | O_NONBLOCK );        // 디바이스를 open 한다.
+       fd = open( dev, O_RDWR | O_NOCTTY );
        if ( 0 > fd)
        {
           printf("%s open error\n", dev);
@@ -87,8 +89,6 @@ void serial(char* dev)
        tcsetattr(fd, TCSANOW, &newtio );
        fcntl(fd, F_SETFL, FNDELAY);
 
-	printf("start\n");
-	write(fd, "T=1\r\n", 5);
 #if 1
        // poll 사용을 위한 준비
 
@@ -96,6 +96,12 @@ void serial(char* dev)
        poll_events.events    = POLLIN | POLLERR;          // 수신된 자료가 있는지, 에러가 있는지
        poll_events.revents   = 0;
 
+	printf("start\n");
+	write(fd, "T=1\r\n", 5);
+
+	printf("msg = \n");
+	while(read(fd, tmp, 1) > 0)
+		printf("%s", tmp);
 
        // 자료 송수신
        printf("start parsing!");
@@ -125,7 +131,9 @@ void serial(char* dev)
                     printf("%c ", rx_buf[i]);
                 printf("\n");
 #endif
-                printf("%s\n", rx_buf);
+				for(i = 0; i < cnt; i++)
+					printf("%s", &rx_buf[i]);
+                //printf("%s\n", rx_buf);
              }
              if ( poll_events.revents & POLLERR)      // event 가 에러?
              {

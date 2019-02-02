@@ -45,17 +45,17 @@ char web_buf[BUF_SIZE] = {0};
 
 pthread_mutex_t mtx;
 
-#if 0
+#if 1
 char can_tx_buf[22] = {'x', '1',
-					   32,  32, '1', 32, '2', 32, '3', 32, '7',
-					   0,   0,  0,   0,   0,  0,  0,   0,  0,
+					   32,  32, 'd', 32, '1', 32, '5', 32, '0',
+					   32, '0',  0,   0,   0,  0,  0,   0,  0,
 					   '\r', '\n'};
-#endif
+#else
 
 char can_tx_buf[18] = {0x2, 0x0, 0x8, 0x40, 0x1, 0x0, 0x0, 0x0,
 					   0x0, 0x0, 0x0, 0x0,  0x0, 0x0, 0x0, 0x0,
 					   0x0, 0x3};
-
+#endif
 
 void err_handler(char *msg)
 {
@@ -101,13 +101,18 @@ void set_bldc_vcp_tx_buf(char *buf, char *tx_buf, int protocol)
 
 	//memmove(temp, &buf[2], 4);
 
-	tx_buf[8] = protocol;
-	tx_buf[9] = buf[1];
-	tx_buf[10] = buf[2];
-	tx_buf[11] = buf[3];
+	tx_buf[5] = protocol;
+	tx_buf[6] = '32';
+	tx_buf[7] = '32';
+	tx_buf[8] = buf[2]
+	tx_buf[9] = '32';
+	tx_buf[10] = buf[3];
+	tx_buf[11] = '32';
 	tx_buf[12] = buf[4];
+	tx_buf[13] = '32';
+	tx_buf[14] = buf[5];
 
-	printf_can_arr(tx_buf, 18);
+	printf_can_arr(tx_buf, 22);
 }
 
 void set_servo_vcp_tx_buf(char *buf, char *tx_buf, int protocol)
@@ -311,10 +316,10 @@ void *vcp_can_tx(void *fd)
 				break;
 			case 13:
 				set_bldc_vcp_tx_buf(data, can_tx_buf, 13);
-				write(usb2can, can_tx_buf, 18);
+				write(usb2can, can_tx_buf, 22);
 				printf("(13) BLDC\n");
 				//printf_can_arr(can_tx_buf, 22);
-				memset(&can_tx_buf[8], 0x0, 8);
+				memset(&can_tx_buf[5], 0x0, 10);
 				break;
 			default:
 				break;
