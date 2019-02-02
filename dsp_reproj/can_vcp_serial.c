@@ -88,7 +88,7 @@ void serial(char* dev)
        fcntl(fd, F_SETFL, FNDELAY);
 
 	printf("start\n");
-	write(fd, "T=1\r\n",6);
+	write(fd, "T=1\r\n", 5);
 #if 1
        // poll 사용을 위한 준비
 
