@@ -44,11 +44,13 @@ socklen_t web_addr_size;
 char web_buf[BUF_SIZE] = {0};
 
 pthread_mutex_t mtx;
+pthread_mutex_t condition_mutex = PTHREAD_MUTEX_INITIALIZER;
+pthread_cond_t condition_cond = PTHREAD_COND_INITIALIZER;
 
 #if 1
-char can_tx_buf[22] = {'x', '1',
-					   32,  32, 'd', 32, '1', 32, '5', 32, '0',
-					   32, '0',  0,   0,   0,  0,  0,   0,  0,
+char can_tx_buf[22] = {'x', '1', 32,
+					   32, 'd', 32, '1', 32, '5', 32, '0',
+					   32, '0', 32, '0', 32, '0', 32, '0',
 					   '\r', '\n'};
 #else
 
@@ -79,7 +81,7 @@ void printf_can_arr(char *buf, int num)
 	printf("can buf = ");
 
 	for(i = 0; i < num; i++)
-		printf("%3c", buf[i]);
+		printf("%c", buf[i]);
 
 	printf("\n");
 }
@@ -94,23 +96,22 @@ void can_calc_crc(char *buf, int num)
 	buf[16] = sum;
 }
 
-void set_bldc_vcp_tx_buf(char *buf, char *tx_buf, int protocol)
+void set_bldc_vcp_tx_buf(char *buf, char *tx_buf, char protocol)
 {
 	int i;
 	char temp[16] = {0};
 
 	//memmove(temp, &buf[2], 4);
 
-	tx_buf[5] = protocol;
-	tx_buf[6] = '32';
-	tx_buf[7] = '32';
-	tx_buf[8] = buf[2]
-	tx_buf[9] = '32';
+	tx_buf[4] = protocol;
+	tx_buf[5] = 32;
+	tx_buf[6] = buf[1];
+	tx_buf[7] = 32;
+	tx_buf[8] = buf[2];
+	tx_buf[9] = 32;
 	tx_buf[10] = buf[3];
-	tx_buf[11] = '32';
+	tx_buf[11] = 32;
 	tx_buf[12] = buf[4];
-	tx_buf[13] = '32';
-	tx_buf[14] = buf[5];
 
 	printf_can_arr(tx_buf, 22);
 }
@@ -236,6 +237,7 @@ void web_socket_config(int *sc, si *sa, int sa_size, int port)
 	web_addr_size = sizeof(web_clnt_addr);
 }
 
+#if 0
 void *phone_rx(void *fd)
 {
 	int len;
@@ -263,6 +265,7 @@ void *phone_rx(void *fd)
 		}
 	}
 }
+#endif
 
 void *phone_tx(void *fd)
 {
@@ -283,6 +286,10 @@ void *vcp_can_tx(void *fd)
 
 	for(;;)
 	{
+		pthread_mutex_lock(&condition_mutex);
+		pthread_cond_wait(&condition_cond, &condition_mutex);
+		pthread_mutex_unlock(&condition_mutex);
+
 		pthread_mutex_lock(&mtx);
 
 #ifdef __WIFI__
@@ -290,10 +297,10 @@ void *vcp_can_tx(void *fd)
 		memcpy(data, &sock_buf[2], 5);
 #elif __WEB__
 		memcpy(temp, web_buf, 2);
-		memcpy(data, &sock_buf[2], 5);
+		memcpy(data, &web_buf[2], 5);
 #endif
 
-		//printf("data = %c, %c, %c, %c, %c\n", data[0], data[1], data[2], data[3], data[4]);
+		//printf("tmp = %c%c, data = %c, %c, %c, %c, %c\n", temp[0], temp[1], data[0], data[1], data[2], data[3], data[4]);
 
 		switch(atoi(temp))
 		{
@@ -315,11 +322,12 @@ void *vcp_can_tx(void *fd)
 				memset(&can_tx_buf[8], 0x0, 8);
 				break;
 			case 13:
-				set_bldc_vcp_tx_buf(data, can_tx_buf, 13);
-				write(usb2can, can_tx_buf, 22);
+				set_bldc_vcp_tx_buf(data, can_tx_buf, 'd');
+				write(usb2can, can_tx_buf, 21);
 				printf("(13) BLDC\n");
 				//printf_can_arr(can_tx_buf, 22);
-				memset(&can_tx_buf[5], 0x0, 10);
+				memset(&can_tx_buf[4], 0x0, 9);
+				//memset(temp, 0x0, 2);
 				break;
 			default:
 				break;
@@ -366,19 +374,28 @@ void *web_rx(void *fd)
 	for(;;)
         {
                 int web_clnt_sock = accept(web_serv_sock, (sp)&web_clnt_addr, &web_addr_size);
-		printf("Web Client Access\n");
+		//printf("Web Client Access\n");
 
                 if(web_clnt_sock == -1)
                         continue;
 
+		pthread_mutex_lock(&mtx);
+
 		if((len = read(web_clnt_sock, (char *)&web_buf, BUF_SIZE)) != 0)
 			write(web_clnt_sock, msg, len);
 
-		printf("web_buf = %s\n", web_buf);
+		//printf("web_buf = %s\n", web_buf);
 
+		pthread_mutex_unlock(&mtx);
 
 		close(web_clnt_sock);
 		usleep(1000);
+
+		pthread_mutex_lock(&condition_mutex);
+
+		pthread_cond_signal(&condition_cond);
+
+		pthread_mutex_unlock(&condition_mutex);
         }
 }
 
@@ -420,7 +437,8 @@ int main(int argc, char **argv)
 		exit(1);
 	}
 
-#if 0
+#if 1
+	//if((fd = open(dev, O_RDWR | O_NOCTTY | O_NONBLOCK)) < 0)
 	if((fd = open(dev, O_RDWR | O_NOCTTY | O_NONBLOCK)) < 0)
 	{
 		printf("Open Error\n");
@@ -432,16 +450,18 @@ int main(int argc, char **argv)
 	serial_config(fd, &newtio, sizeof(newtio), &poll_events);
 #endif
 
-	fpga_sock_config(argv[2]);
-	socket_config(&serv_sock, &serv_addr, sizeof(serv_addr), argv[1]);
+	//fpga_sock_config(argv[2]);
+	//socket_config(&serv_sock, &serv_addr, sizeof(serv_addr), argv[1]);
 	web_socket_config(&web_serv_sock, &web_serv_addr, sizeof(web_serv_addr), 4000);
 
+#if 0
 	thread_id = pthread_create(&p_thread[0], NULL, phone_rx, NULL);
 	if(thread_id < 0)
 	{
 		perror("phone rx thread create error: ");
 		exit(0);
 	}
+#endif
 
 #if 0
 	thread_id = pthread_create(&p_thread[1], NULL, phone_tx, (void *)phone_clnt_sock);
@@ -486,7 +506,7 @@ int main(int argc, char **argv)
 
 	printf("test\n");
 
-	pthread_join(p_thread[0], (void **)&status);
+	//pthread_join(p_thread[0], (void **)&status);
 	pthread_join(p_thread[3], (void **)&status);
 	//pthread_join(p_thread[4], (void **)&status);
 	pthread_join(p_thread[5], (void **)&status);

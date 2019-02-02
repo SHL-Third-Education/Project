@@ -91,7 +91,7 @@ def index():
     });
 
     slider.addEventListener('mouseup', () => {
-       isClicked = true;
+       isClicked = false;
     });
 </script>
 </body>
@@ -104,19 +104,15 @@ def recv(v):
     #msg = v.receive()
     #v.send(msg)
     #print(v)
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.connect((ip, port))
-        print('success')
-        #line = input('>>>')
-        d = str(v).encode()
-        #print('13 '.encode() + d)
-        s.sendall('13 '.encode() + d)
-        #s.sendall(str(v).encode())
-        #s.sendall('1600'.encode())
-        response = s.recv(8192)
-        #print(response.decode())
-        #print(v)
-        return response.decode()
+    #with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect((ip, port))
+    print('success')
+    d = str(v).encode()
+    s.sendall('13 '.encode() + d)
+    #s.sendall(d)
+    response = s.recv(8192)
+    return response.decode()
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
