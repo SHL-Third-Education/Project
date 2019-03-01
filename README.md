@@ -167,6 +167,7 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |Utility|How to install OpenJDK 11 on Ubuntu 16.04|[pdf]()|
 |Utility|How to use JetBrains Toolbox|[pdf]()|
 |PCB|Altium DC-DC Converter|[pdf]()|
+|Java|Intellij Java & Web Programming|[pdf]()|
 
 
 
