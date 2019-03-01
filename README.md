@@ -162,12 +162,12 @@ There are some problem to convert sdk-linux-am57xx-evm-04.03.00.05 to 05.00.00.1
 |BeagleBone|Ready to Analysis Linux Device Driver|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/device_driver/Ready_to_Analysis_BeagleBone_Based_Device_Driver.pdf)|
 |AD9361|AD9361 with ZedBoard Tutorial I|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AD9361/AD9361_with_ZedBoard_Tutorial_I.pdf)|
 |AD9361|AD9361 with ZedBoard Tutorial II|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/AD9361/AD9361_with_ZedBoard_Tutorial_II.pdf)|
-|Utility|How to create Shared Library|[pdf]()|
-|Utility|How to install CLion|[pdf]()|
-|Utility|How to install OpenJDK 11 on Ubuntu 16.04|[pdf]()|
-|Utility|How to use JetBrains Toolbox|[pdf]()|
-|PCB|Altium DC-DC Converter|[pdf]()|
-|Java|Intellij Java & Web Programming|[pdf]()|
+|Utility|How to create Shared Library|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/utility/How_to_create_Shared_Library.pdf)|
+|Utility|How to install CLion|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/utility/How_to_install_CLion.pdf)|
+|Utility|How to install OpenJDK 11 on Ubuntu 16.04|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/utility/How_to_install_OpenJDK11_on_Ubuntu16_04.pdf)|
+|Utility|How to use JetBrains Toolbox|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/utility/How_to_use_JetBrains_Toolbox(WebStorm).pdf)|
+|PCB|Altium DC-DC Converter|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/pcb/Altium_Basic_DCDC_Converter.pdf)|
+|Java|Intellij Java & Web Programming|[pdf](https://github.com/SHL-Third-Education/Project/blob/master/experiment/doc/java/Intellij_Java_Programming_n_Web.pdf)|
 
 
 
