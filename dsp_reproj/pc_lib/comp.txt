@@ -1,0 +1,3 @@
+gcc -c -Wall -Werror -fpic serial.c
+gcc -shared -o libserial.so serial.o
+gcc -L/$(pwd) -Wl,-rpath=$(pwd) -Wall -o test serial_test.c -lserial

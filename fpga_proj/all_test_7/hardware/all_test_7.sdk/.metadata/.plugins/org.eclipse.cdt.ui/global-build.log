@@ -1,0 +1,126 @@
+10:17:14 **** Incremental Build of configuration Debug for project ttt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:17:23 **** Incremental Build of configuration Debug for project ttt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:18:36 **** Auto Build of configuration Debug for project ttt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ttt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:11:9: warning: unused variable 'i' [-Wunused-variable]
+     int i;
+         ^
+Finished building: ../src/helloworld.c
+ 
+Building target: ttt.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ttt_bsp/ps7_cortexa9_0/lib -o "ttt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ttt.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ttt.elf  |tee "ttt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22312	   1148	  22568	  46028	   b3cc	ttt.elf
+Finished building: ttt.elf.size
+ 
+10:18:47 **** Incremental Build of configuration Debug for project ttt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:19:28 **** Auto Build of configuration Debug for project ttt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ttt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:12:11: warning: variable 'degree' set but not used [-Wunused-but-set-variable]
+     float degree;
+           ^~~~~~
+../src/helloworld.c:11:9: warning: unused variable 'i' [-Wunused-variable]
+     int i;
+         ^
+Finished building: ../src/helloworld.c
+ 
+Building target: ttt.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ttt_bsp/ps7_cortexa9_0/lib -o "ttt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ttt.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ttt.elf  |tee "ttt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22312	   1148	  22568	  46028	   b3cc	ttt.elf
+Finished building: ttt.elf.size
+ 
+10:19:33 **** Incremental Build of configuration Debug for project ttt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:21:07 **** Auto Build of configuration Debug for project ttt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ttt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:24:10: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+          sleep(1);
+          ^~~~~
+../src/helloworld.c:12:11: warning: variable 'degree' set but not used [-Wunused-but-set-variable]
+     float degree;
+           ^~~~~~
+../src/helloworld.c:11:9: warning: unused variable 'i' [-Wunused-variable]
+     int i;
+         ^
+Finished building: ../src/helloworld.c
+ 
+Building target: ttt.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ttt_bsp/ps7_cortexa9_0/lib -o "ttt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ttt.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ttt.elf  |tee "ttt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22376	   1148	  22568	  46092	   b40c	ttt.elf
+Finished building: ttt.elf.size
+ 
+10:21:14 **** Incremental Build of configuration Debug for project ttt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:21:30 **** Incremental Build of configuration Debug for project ttt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:21:40 **** Incremental Build of configuration Debug for project ttt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:21:51 **** Incremental Build of configuration Debug for project ttt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:22:04 **** Incremental Build of configuration Debug for project ttt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.

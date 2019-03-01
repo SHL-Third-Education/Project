@@ -1,0 +1,8 @@
+set_property IOSTANDARD LVCMOS33 [get_ports SPI0_MISO_I]
+set_property IOSTANDARD LVCMOS33 [get_ports SPI0_MOSI_O]
+set_property IOSTANDARD LVCMOS33 [get_ports SPI0_SCLK_O]
+set_property IOSTANDARD LVCMOS33 [get_ports SPI0_SS_O]
+set_property PACKAGE_PIN V12 [get_ports SPI0_MISO_I]
+set_property PACKAGE_PIN W16 [get_ports SPI0_MOSI_O]
+set_property PACKAGE_PIN J15 [get_ports SPI0_SCLK_O]
+set_property PACKAGE_PIN H15 [get_ports SPI0_SS_O]

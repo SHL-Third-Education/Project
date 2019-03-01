@@ -1,0 +1,1 @@
+g++ source `pkg-config opencv --cflags --libs` -g
