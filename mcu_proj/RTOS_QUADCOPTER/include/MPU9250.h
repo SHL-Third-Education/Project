@@ -47,10 +47,20 @@
 #define D2R  0.0174533
 #define GYRO2DEGREE_PER_SEC  65.5
 
+
 #define PGAIN  0.3;
 #define IGAIN   0.0001;
 #define DGAIN   0.000003;  // 2.2
 #define PID_MAX     300
+
+#define SamplingTime 0.0025     // 측정된 전체 루프 속도
+
+/*LPF */
+float LPF_error = 0;
+float LPF_ee = 0;
+float LPF_ee_pre = 0;
+float LPF_ww = 0;
+
 float pitch;
 float roll;
 float yaw;
@@ -319,6 +329,7 @@ void readGyroData(int16_t * destination);
 void readMagData(int16_t * destination);
 void get_YPR(void);
 void get_offset_value(void);
+float LPF(float input, float CutOffFrequency);
 
 uint8 readByte(uint8 devAddr, uint8 regAddr){
 
@@ -769,8 +780,8 @@ void get_YPR(void){
     angle_roll_acc -= 0.0;                                               //Accelerometer calibration value for roll
 
     if(set_gyro_angles){                                                 //If the IMU is already started
-      angle_pitch = angle_pitch * 0.47 + angle_pitch_acc * 0.53;     //Correct the drift of the gyro pitch angle with the accelerometer pitch angle
-      angle_roll = angle_roll * 0.47 + angle_roll_acc * 0.53;        //Correct the drift of the gyro roll angle with the accelerometer roll angle
+      angle_pitch = angle_pitch * 0.95 + angle_pitch_acc * 0.05;     //Correct the drift of the gyro pitch angle with the accelerometer pitch angle
+      angle_roll = angle_roll * 0.95 + angle_roll_acc * 0.05;        //Correct the drift of the gyro roll angle with the accelerometer roll angle
     }
     else{                                                                //At first start
       angle_pitch = angle_pitch_acc;                                     //Set the gyro pitch angle equal to the accelerometer pitch angle
@@ -784,7 +795,12 @@ void get_YPR(void){
 
     roll = angle_pitch_output;
     pitch = angle_roll_output;
-    yaw += g_xyz[2] * 0.000611;
+
+    if( g_xyz[2] > 11 || g_xyz[2] < -11){
+        yaw += g_xyz[2] * 0.000611;
+    }
+
+//    pitch = LPF(pitch, 10);
 
     pitch_level_adjust = angle_pitch * 15;                                    //Calculate the pitch angle correction
     roll_level_adjust = angle_roll * 15;                                      //Calculate the roll angle correction
@@ -830,5 +846,15 @@ void readMagData(int16_t * destination)
     }
   }
 }
+float LPF(float input, float CutOffFrequency)
+{
+    float output;
 
+    LPF_error = input - LPF_ww;
+    LPF_ee = LPF_error * CutOffFrequency;
+    LPF_ww = LPF_ww + (LPF_ee + LPF_ee_pre)*SamplingTime*0.5;
+    LPF_ee_pre = LPF_ee;
+    output = LPF_ww;
+    return output;
+}
 #endif /* INCLUDE_MPU9250_H_ */
